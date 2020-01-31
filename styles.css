@@ -1,0 +1,220 @@
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 36%, 70%);
+  background: hsla(0, 93%, 83%, 0.041);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+
+.bg {
+  max-width: 960px;
+  margin: 0 0 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  width: 35%;
+}
+
+.dark {
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+}
+
+.ligh {
+  font-weight: 100;
+}
+
+.aside .text-input {
+  float: left;
+  margin-top: 10px;
+  padding: 18px;
+  border-radius: 25px;
+  border: 1px solid hsla(0, 36%, 70%, 0.397);
+  width: 320px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.aside .text-input:focus {
+  border: 1px solid #f8bfbf;
+}
+
+.aside .btn-arrow {
+  background-image: url(images/icon-arrow.svg),
+    linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  padding: 18px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  margin-left: -60px;
+  margin-bottom: -49.5px;
+}
+
+.aside .btn-arrow:hover {
+  background-image: url(images/icon-arrow.svg),
+    linear-gradient(135deg, #fcacac, #ff7777);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  padding: 18px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  margin-left: -60px;
+  margin-bottom: -49.5px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 300px;
+  height: 300px;
+  background-color: hsl(0, 93%, 83%);
+}
+
+nav {
+  margin-top: 60px;
+  margin-bottom: 140px;
+}
+
+h1 {
+  font-size: 65px;
+  margin-bottom: 30px;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+}
+
+.bg-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside {
+  width: 400px;
+  padding: 5px;
+}
+
+.bg-img {
+  width: 40%;
+  height: 750px;
+  background: url("images/hero-desktop.jpg") no-repeat;
+  order: 0;
+}
+
+p {
+  margin: 8px 0 18px 0;
+  line-height: 30px;
+  text-align: start;
+}
+
+footer {
+  margin-top: 25px;
+}
+
+@media (max-width: 700px) {
+  * {
+    margin: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+
+  .bg-nav {
+    margin: 0;
+    order: -1;
+  }
+  nav {
+    margin: 20px;
+  }
+  nav > li > img {
+    width: 80%;
+    height: 80%;
+  }
+  .bg-img {
+    display: none;
+  }
+  .bg-img-mobile {
+    width: 500px;
+    height: 300px;
+    background: url("images/hero-mobile.jpg") no-repeat;
+    background-size: 100%;
+    order: -1;
+    margin-bottom: 60px;
+  }
+  .bg {
+    flex-direction: column;
+    margin: 0;
+  }
+  .aside {
+    font-size: 15px;
+    margin: 0;
+  }
+  .aside p {
+    display: block;
+    text-align: center;
+    overflow: auto;
+    width: 80%;
+    align-self: center;
+    margin-left: 30px;
+  }
+  .aside h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+  }
+
+  .bg-aside {
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .aside .text-input {
+    float: left;
+    margin-top: 10px;
+    padding: 18px;
+    border-radius: 25px;
+    border: 1px solid hsla(0, 36%, 70%, 0.397);
+    width: 290px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    margin-left: 10px;
+  }
+
+  .aside .btn-arrow {
+    margin-left: -80px;
+    margin-bottom: -51.5px;
+    width: 75px;
+  }
+}
